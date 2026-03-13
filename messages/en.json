@@ -1,0 +1,281 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "caseStudies": "Case Studies",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookCall": "Book a Call"
+  },
+  "hero": {
+    "headline": "Stop Losing Money to Manual Work",
+    "subheadline": "We build intelligent automations that save your team 20+ hours per week — so you can scale without hiring.",
+    "cta1": "Book a Free Strategy Call",
+    "cta2": "See Our Results",
+    "urgencyBadge": "Only 3 onboarding spots left this quarter"
+  },
+  "logoBar": {
+    "heading": "Trusted by 50+ businesses across Israel and beyond"
+  },
+  "whyUs": {
+    "sectionTitle": "Why flows44?",
+    "sectionSubtitle": "Because we're not another template shop.",
+    "cards": [
+      {
+        "title": "Lightning Fast",
+        "description": "Live in days, not months. Our sprint-based process delivers working automations in 5–10 business days.",
+        "stat": "7",
+        "statLabel": "days avg. to launch"
+      },
+      {
+        "title": "Custom-Built",
+        "description": "No cookie-cutter Zapier chains. Every workflow is engineered specifically for your business logic.",
+        "stat": "100%",
+        "statLabel": "custom solutions"
+      },
+      {
+        "title": "Ongoing Support",
+        "description": "We don't disappear after launch. Monitoring, optimization, and scaling support included.",
+        "stat": "99.9%",
+        "statLabel": "uptime SLA"
+      },
+      {
+        "title": "Proven ROI",
+        "description": "Our clients see return on investment within the first month — most within 2 weeks.",
+        "stat": "14",
+        "statLabel": "day avg. ROI"
+      }
+    ]
+  },
+  "mission": {
+    "statement": "We believe every business deserves to operate like a Fortune 500 — without the Fortune 500 budget. Automation isn't a luxury. It's the great equalizer.",
+    "cta": "Join the Automation Revolution"
+  },
+  "caseStudies": {
+    "sectionTitle": "Real Results",
+    "sectionSubtitle": "Real businesses. Real problems. Real results.",
+    "items": [
+      {
+        "company": "E-commerce Brand",
+        "challenge": "Manual order processing eating 40 hrs/week",
+        "solution": "Automated fulfillment pipeline with inventory sync",
+        "metric": "34%",
+        "metricLabel": "increase in order throughput"
+      },
+      {
+        "company": "Marketing Agency",
+        "challenge": "Lead follow-up falling through the cracks",
+        "solution": "AI-powered lead scoring + automated nurture sequences",
+        "metric": "67%",
+        "metricLabel": "faster response time"
+      },
+      {
+        "company": "SaaS Company",
+        "challenge": "Onboarding taking 3 weeks per client",
+        "solution": "Automated onboarding workflow with smart document generation",
+        "metric": "3 weeks → 2 days",
+        "metricLabel": "onboarding time reduced"
+      },
+      {
+        "company": "Real Estate Firm",
+        "challenge": "Agents spending half their day on paperwork",
+        "solution": "Automated contract generation + CRM sync",
+        "metric": "15 hrs/week",
+        "metricLabel": "recovered per agent"
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "value": 150, "suffix": "+", "label": "Projects Delivered" },
+      { "value": 50000, "suffix": "+", "label": "Hours Saved for Clients" },
+      { "value": 98, "suffix": "%", "label": "Client Satisfaction Rate" },
+      { "value": 12, "suffix": "M+ ₪", "label": "Revenue Generated for Clients" }
+    ]
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "Three pillars. One outcome: your business on autopilot.",
+    "items": [
+      {
+        "title": "Plan & Organize",
+        "description": "We audit your workflows, identify bottlenecks, and design an automation roadmap tailored to your goals.",
+        "features": ["Process audit", "Workflow mapping", "ROI projection", "Priority matrix"]
+      },
+      {
+        "title": "Custom Automations",
+        "description": "From CRM integrations to multi-step workflows — built from scratch for your exact needs.",
+        "features": ["API integrations", "Data pipelines", "Multi-platform sync", "Error handling & alerts"]
+      },
+      {
+        "title": "Smart AI Solutions",
+        "description": "AI-powered workflows that learn, adapt, and make decisions — not just follow rules.",
+        "features": ["AI document processing", "Intelligent routing", "Predictive analytics", "Natural language interfaces"]
+      }
+    ]
+  },
+  "pricing": {
+    "sectionTitle": "Pricing",
+    "sectionSubtitle": "An investment that pays for itself in week one.",
+    "objectionLine": "Not sure which plan is right? Book a free strategy call and we'll build your custom roadmap — no commitment.",
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": "₪3,500",
+        "period": "/month",
+        "description": "For businesses ready to automate their first 2–3 workflows.",
+        "features": ["Up to 3 automations", "Email + CRM integration", "Basic monitoring", "5-day delivery"],
+        "cta": "Get Started",
+        "popular": false
+      },
+      {
+        "name": "Pro",
+        "price": "₪7,500",
+        "period": "/month",
+        "description": "For scaling businesses that want a full automation infrastructure.",
+        "features": ["Up to 10 automations", "Advanced AI workflows", "Priority support", "Dedicated account manager", "Custom API integrations"],
+        "cta": "Scale Your Business",
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "description": "For organizations that need enterprise-grade automation at scale.",
+        "features": ["Unlimited automations", "Custom AI models", "24/7 support", "On-site consultation", "SLA guarantees"],
+        "cta": "Contact Us",
+        "popular": false
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "What Our Clients Say",
+    "sectionSubtitle": "Don't take our word for it — hear from the businesses we've transformed.",
+    "items": [
+      {
+        "quote": "flows44 automated our entire lead pipeline. We went from losing 30% of leads to converting at record rates. The ROI was visible in week one.",
+        "name": "Sarah Cohen",
+        "role": "VP Marketing",
+        "company": "TechStart Ltd.",
+        "rating": 5
+      },
+      {
+        "quote": "Our team was drowning in manual data entry. flows44 built a system that handles 1,200 entries per day — flawlessly. We reassigned 3 employees to growth tasks.",
+        "name": "David Levy",
+        "role": "Operations Director",
+        "company": "LogiFlow",
+        "rating": 5
+      },
+      {
+        "quote": "The speed was incredible. From first call to live automation in 6 days. And it actually works — 4 months in, zero downtime.",
+        "name": "Maya Rosenberg",
+        "role": "CEO",
+        "company": "GreenScale Commerce",
+        "rating": 5
+      },
+      {
+        "quote": "We tried Zapier, Make, and two other agencies. flows44 was the first team that truly understood our business logic and built something custom that works.",
+        "name": "Amit Katz",
+        "role": "CTO",
+        "company": "DataBridge Solutions",
+        "rating": 5
+      }
+    ]
+  },
+  "team": {
+    "sectionTitle": "Meet the Team",
+    "sectionSubtitle": "The people behind your automation success.",
+    "items": [
+      {
+        "name": "Yoni Avrahan",
+        "role": "Founder & CEO",
+        "bio": "10+ years in business process automation. Passionate about helping businesses scale through intelligent workflows."
+      },
+      {
+        "name": "Noa Shalev",
+        "role": "Head of Automation",
+        "bio": "Full-stack automation architect. Built 100+ custom workflows across e-commerce, SaaS, and finance."
+      },
+      {
+        "name": "Oren Mizrahi",
+        "role": "AI Solutions Lead",
+        "bio": "Machine learning engineer specializing in document processing and intelligent routing systems."
+      },
+      {
+        "name": "Tamar Ben-David",
+        "role": "Client Success Manager",
+        "bio": "Ensures every client sees measurable results. Manages onboarding, training, and ongoing optimization."
+      }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "sectionSubtitle": "Everything you need to know before getting started.",
+    "items": [
+      {
+        "question": "How much does it cost?",
+        "answer": "Our plans start at ₪3,500/month for the Starter package. The Pro plan at ₪7,500/month is our most popular choice. Enterprise pricing is custom. Every plan pays for itself — most clients see ROI within 14 days. Book a free strategy call and we'll build your custom roadmap."
+      },
+      {
+        "question": "How long until I see results?",
+        "answer": "Most clients see ROI within 14 days of launch. Our average delivery time is 7 business days from kickoff to live automation. You'll start saving time immediately."
+      },
+      {
+        "question": "What if something breaks?",
+        "answer": "We monitor 24/7 and our SLA guarantees 99.9% uptime. If something breaks, we fix it — included in your plan. You'll never be left hanging."
+      },
+      {
+        "question": "Do I need technical knowledge?",
+        "answer": "Zero. We handle everything — from design to deployment to maintenance. You just tell us what wastes your time, and we make it disappear."
+      },
+      {
+        "question": "What tools do you integrate with?",
+        "answer": "We integrate with all major platforms: HubSpot, Salesforce, Slack, Google Workspace, Shopify, Monday.com, Notion, Airtable, and hundreds more via custom API connections."
+      },
+      {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes, all plans are month-to-month with no lock-in contracts. We earn your business every month. That said, our retention rate is 98% — because the results speak for themselves."
+      },
+      {
+        "question": "How is this different from Zapier or Make?",
+        "answer": "Zapier and Make are DIY tools — great for simple tasks but limited for complex business logic. We're a done-for-you agency. We architect, build, test, deploy, and maintain custom automations tailored to your exact workflows. You focus on your business."
+      },
+      {
+        "question": "Do you work with companies outside Israel?",
+        "answer": "Absolutely. We serve clients globally with full support in English and Hebrew. Our automations work across time zones and markets."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Ready to Stop Wasting Time?",
+    "subheadline": "Book a free strategy call. We'll map your automation opportunities and show you exactly how much time and money you'll save.",
+    "cta": "Book Your Free Strategy Call"
+  },
+  "footer": {
+    "copyright": "© 2024 flows44. All rights reserved.",
+    "tagline": "Built with intelligence",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "bookCall": "Book a Call",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "mostPopular": "Most Popular",
+    "perMonth": "/month",
+    "custom": "Custom",
+    "spotsLeft": "spots left"
+  }
+}

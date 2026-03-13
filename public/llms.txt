@@ -1,0 +1,40 @@
+# flows44 — Business Automation Agency
+
+## About
+flows44 is a premium automation agency based in Israel that builds custom automations
+and AI-powered workflows for businesses. We help companies eliminate manual work
+and scale operations without scaling headcount.
+
+## Services
+1. Plan & Organize — Process audit, workflow mapping, ROI projection, automation roadmap
+2. Custom Automations — API integrations, data pipelines, multi-platform sync, CRM automation
+3. Smart AI Solutions — AI document processing, intelligent routing, predictive analytics
+
+## Pricing
+- Starter: ₪3,500/month (up to 3 automations, 5-day delivery)
+- Pro: ₪7,500/month (up to 10 automations, AI workflows, dedicated account manager)
+- Enterprise: Custom pricing (unlimited automations, custom AI models, 24/7 support)
+
+## Key Metrics
+- 150+ projects delivered
+- 50,000+ hours saved for clients
+- 98% client satisfaction rate
+- Average ROI within 14 days
+
+## Differentiators
+- Custom-built solutions (not templates)
+- Average 7-day delivery
+- 99.9% uptime SLA
+- Bilingual support (English + Hebrew)
+- Serves businesses in Israel and globally
+
+## Contact
+- Website: https://flows44.com
+- Email: hello@flows44.com
+- Phone: +972-XX-XXX-XXXX
+- Location: Tel Aviv, Israel
+- Book a call: https://flows44.com/book
+
+## Languages
+- English: https://flows44.com/en
+- Hebrew: https://flows44.com/he

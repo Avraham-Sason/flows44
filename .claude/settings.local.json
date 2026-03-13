@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(ralph-loop:ralph-loop)",
+      "Skill(ralph-loop:ralph-loop:*)",
+      "Bash(\"C:/Users/avrah/.claude/plugins/cache/claude-plugins-official/ralph-loop/b36fd4b75301/scripts/setup-ralph-loop.sh\" \"Build the flows44 website according to the PRD.md - a bilingual Hebrew RTL and English LTR Next.js 15 marketing site with 3 themes, 14 sections, shadcn-ui, next-intl, framer-motion, and full SEO and LLM accessibility layer\" --max-iterations 50)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src --no-import-alias --use-pnpm --yes)",
+      "Bash(npx create-next-app@latest flows44-temp --typescript --tailwind --eslint --app --src --no-import-alias --use-pnpm --yes)",
+      "Bash(cp -r flows44-temp/* .)",
+      "Bash(cp flows44-temp/.* .)",
+      "Bash(rm -rf flows44-temp)",
+      "Bash(rm -f pnpm-workspace.yaml)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm add:*)",
+      "Bash(rm -f app/page.tsx)",
+      "Bash(mkdir -p app/[locale]/privacy app/[locale]/terms app/api/company-info)",
+      "Bash(pnpm build:*)",
+      "Bash(node -e \"try { require.resolve\\(''next-intl/plugin''\\); console.log\\(''FOUND''\\); } catch\\(e\\) { console.log\\(e.message\\); }\")",
+      "Bash(find C:/work/personal/Flows-44/node_modules/.pnpm/next-intl@4.8.3* -name \"*.d.ts\")",
+      "Bash(find C:/work/personal/Flows-44/node_modules/.pnpm/use-intl* -name \"MessageKeys*\" -o -name \"createTranslator*\")",
+      "Bash(find C:/work/personal/Flows-44/node_modules/.pnpm/use-intl* -name \"*.js\" -path \"*/core/*\")",
+      "Bash(grep -r \"NestedKeyOf\\\\|NestedValueOf\" C:/work/personal/Flows-44/node_modules/.pnpm/use-intl*/node_modules/use-intl/dist --include=\"*.d.ts\")",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:next-intl-docs.vercel.app)",
+      "WebFetch(domain:next-intl.dev)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
