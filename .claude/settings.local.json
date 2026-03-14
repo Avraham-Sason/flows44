@@ -24,7 +24,11 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:next-intl-docs.vercel.app)",
       "WebFetch(domain:next-intl.dev)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls C:/work/personal/Flows-44/node_modules/.pnpm/next@16.1.6_*/node_modules/next/dist/esm/build/webpack/loaders/)",
+      "Bash(grep -r proxy C:/work/personal/Flows-44/node_modules/.pnpm/next-intl@4.8.3_*/node_modules/next-intl/dist/types/)",
+      "Bash(pnpm remove:*)",
+      "Bash(node node_modules/next/dist/bin/next build)"
     ]
   }
 }

@@ -1,31 +1,52 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
-import { fadeUp } from "@/lib/animations";
+import { useRef, useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
 interface ScrollRevealProps {
   children: React.ReactNode;
-  variants?: Variants;
   className?: string;
+  variant?: "up" | "fade" | "scale" | "slide-left" | "slide-right";
   delay?: number;
+  threshold?: number;
 }
 
 export function ScrollReveal({
   children,
-  variants = fadeUp,
   className,
+  variant = "up",
   delay = 0,
+  threshold = 0.15,
 }: ScrollRevealProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [revealed, setRevealed] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setRevealed(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-50px" }}
-      variants={variants}
-      className={className}
-      transition={{ delay }}
+    <div
+      ref={ref}
+      data-reveal={variant}
+      className={cn(revealed && "revealed", className)}
+      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

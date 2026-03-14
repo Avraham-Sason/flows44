@@ -1,12 +1,8 @@
-"use client";
-
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { Zap, Wrench, HeadphonesIcon, TrendingUp } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { staggerChildren, fadeUp } from "@/lib/animations";
 
 const icons = [Zap, Wrench, HeadphonesIcon, TrendingUp];
 
@@ -34,15 +30,9 @@ export function WhyUs() {
         </div>
       </ScrollReveal>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={staggerChildren}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-      >
-        {cards.map((card) => (
-          <motion.div key={card.title} variants={fadeUp}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {cards.map((card, i) => (
+          <div key={card.title} className={`scroll-reveal stagger-${i + 1}`}>
             <GlassCard className="h-full text-center">
               <card.Icon className="h-8 w-8 text-primary mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
@@ -58,9 +48,9 @@ export function WhyUs() {
                 </span>
               </div>
             </GlassCard>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </SectionWrapper>
   );
 }

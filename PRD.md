@@ -334,7 +334,6 @@ Content must be simultaneously persuasive to humans AND extractable by AI:
 | 8 | Services | `#services` | `<Services />` |
 | 9 | Pricing | `#pricing` | `<Pricing />` |
 | 10 | Testimonials | `#testimonials` | `<Testimonials />` |
-| 11 | Team | `#team` | `<Team />` |
 | 12 | FAQ | `#faq` | `<FAQ />` |
 | 13 | CTA Banner | `#contact` | `<CTABanner />` |
 | 14 | Footer | — | `<Footer />` |
@@ -607,15 +606,15 @@ and scale operations without scaling headcount.
 - Serves businesses in Israel and globally
 
 ## Contact
-- Website: https://flows44.com
+- Website: https://flows44.vercel.app
 - Email: hello@flows44.com
 - Phone: +972-XX-XXX-XXXX
 - Location: Tel Aviv, Israel
-- Book a call: https://flows44.com/book
+- Book a call: https://flows44.vercel.app/book
 
 ## Languages
-- English: https://flows44.com/en
-- Hebrew: https://flows44.com/he
+- English: https://flows44.vercel.app/en
+- Hebrew: https://flows44.vercel.app/he
 ```
 
 #### `/api/company-info` (JSON API Route)
@@ -633,7 +632,7 @@ Returns structured JSON for AI agent queries:
   "pricing": { "tiers": [...] },
   "testimonials": [...],
   "metrics": { "projectsDelivered": 150, "hoursSaved": 50000, "satisfactionRate": 98 },
-  "contact": { "email": "hello@flows44.com", "website": "https://flows44.com", "bookingUrl": "https://flows44.com/book" }
+  "contact": { "email": "hello@flows44.com", "website": "https://flows44.vercel.app", "bookingUrl": "https://flows44.vercel.app/book" }
 }
 ```
 

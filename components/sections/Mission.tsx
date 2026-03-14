@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { buttonVariants } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";

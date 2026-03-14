@@ -1,7 +1,4 @@
-"use client";
-
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -9,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { cn } from "@/lib/utils";
-import { staggerChildren, fadeUp } from "@/lib/animations";
 
 export function Pricing() {
   const t = useTranslations("pricing");
@@ -38,15 +34,9 @@ export function Pricing() {
         </div>
       </ScrollReveal>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={staggerChildren}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch"
-      >
-        {tiers.map((tier) => (
-          <motion.div key={tier.name} variants={fadeUp}>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        {tiers.map((tier, i) => (
+          <ScrollReveal key={tier.name} variant="up" delay={i * 120}>
             <GlassCard
               className={`h-full flex flex-col relative ${
                 tier.popular
@@ -80,16 +70,18 @@ export function Pricing() {
               <a
                 href="#contact"
                 className={cn(
-                  buttonVariants({ variant: tier.popular ? "default" : "outline" }),
+                  buttonVariants({
+                    variant: tier.popular ? "default" : "outline",
+                  }),
                   "w-full"
                 )}
               >
                 {tier.cta}
               </a>
             </GlassCard>
-          </motion.div>
+          </ScrollReveal>
         ))}
-      </motion.div>
+      </div>
 
       <ScrollReveal>
         <p className="mt-8 text-center text-sm text-muted-foreground max-w-2xl mx-auto">

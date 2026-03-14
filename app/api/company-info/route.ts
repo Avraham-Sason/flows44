@@ -97,14 +97,14 @@ export async function GET() {
     ],
     contact: {
       email: "hello@flows44.com",
-      website: "https://flows44.com",
-      bookingUrl: "https://flows44.com/book",
+      website: "https://flows44.vercel.app",
+      bookingUrl: "https://flows44.vercel.app/book",
       phone: "+972-XX-XXX-XXXX",
       location: "Tel Aviv, Israel",
     },
     urls: {
-      english: "https://flows44.com/en",
-      hebrew: "https://flows44.com/he",
+      english: "https://flows44.vercel.app/en",
+      hebrew: "https://flows44.vercel.app/he",
     },
   });
 }

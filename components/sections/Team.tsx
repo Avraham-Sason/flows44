@@ -1,12 +1,8 @@
-"use client";
-
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { User } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { staggerChildren, fadeUp } from "@/lib/animations";
 
 export function Team() {
   const t = useTranslations("team");
@@ -30,15 +26,9 @@ export function Team() {
         </div>
       </ScrollReveal>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={staggerChildren}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-      >
-        {items.map((member) => (
-          <motion.div key={member.name} variants={fadeUp}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {items.map((member, i) => (
+          <ScrollReveal key={member.name} variant="up" delay={i * 100}>
             <GlassCard className="h-full text-center group">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-muted mx-auto mb-4">
                 <User className="h-10 w-10 text-muted-foreground" />
@@ -49,9 +39,9 @@ export function Team() {
                 {member.bio}
               </p>
             </GlassCard>
-          </motion.div>
+          </ScrollReveal>
         ))}
-      </motion.div>
+      </div>
     </SectionWrapper>
   );
 }

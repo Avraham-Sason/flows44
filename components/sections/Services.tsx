@@ -1,12 +1,8 @@
-"use client";
-
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { ClipboardList, Cog, Brain } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { staggerChildren, fadeUp } from "@/lib/animations";
 
 const icons = [ClipboardList, Cog, Brain];
 
@@ -33,15 +29,9 @@ export function Services() {
         </div>
       </ScrollReveal>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={staggerChildren}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6"
-      >
-        {items.map((item) => (
-          <motion.div key={item.title} variants={fadeUp}>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {items.map((item, i) => (
+          <ScrollReveal key={item.title} variant="up" delay={i * 120}>
             <GlassCard className="h-full">
               <item.Icon className="h-10 w-10 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
@@ -60,9 +50,9 @@ export function Services() {
                 ))}
               </ul>
             </GlassCard>
-          </motion.div>
+          </ScrollReveal>
         ))}
-      </motion.div>
+      </div>
     </SectionWrapper>
   );
 }

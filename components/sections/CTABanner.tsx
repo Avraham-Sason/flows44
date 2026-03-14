@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { buttonVariants } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -34,7 +32,10 @@ export function CTABanner() {
           <div className="mt-8">
             <a
               href="#contact"
-              className={cn(buttonVariants({ size: "lg" }), "animate-[glow-pulse_2s_ease-in-out_infinite]")}
+              className={cn(
+                buttonVariants({ size: "lg" }),
+                "animate-[glow-pulse_2s_ease-in-out_infinite]"
+              )}
             >
               {t("cta")}
             </a>

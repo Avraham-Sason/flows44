@@ -1,12 +1,8 @@
-"use client";
-
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Badge } from "@/components/ui/badge";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { staggerChildren, fadeUp } from "@/lib/animations";
 
 export function CaseStudies() {
   const t = useTranslations("caseStudies");
@@ -32,15 +28,9 @@ export function CaseStudies() {
         </div>
       </ScrollReveal>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={staggerChildren}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
-      >
-        {items.map((item) => (
-          <motion.div key={item.company} variants={fadeUp}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {items.map((item, i) => (
+          <ScrollReveal key={item.company} variant="up" delay={i * 120}>
             <GlassCard className="h-full">
               <Badge variant="outline" className="mb-3">
                 {item.company}
@@ -58,9 +48,9 @@ export function CaseStudies() {
                 </span>
               </div>
             </GlassCard>
-          </motion.div>
+          </ScrollReveal>
         ))}
-      </motion.div>
+      </div>
     </SectionWrapper>
   );
 }

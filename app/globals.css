@@ -153,3 +153,43 @@ html {
   0%, 100% { box-shadow: 0 0 15px hsl(var(--primary) / 0.3); }
   50% { box-shadow: 0 0 30px hsl(var(--primary) / 0.5); }
 }
+
+/* ===== Scroll-reveal transitions (IntersectionObserver-driven) ===== */
+[data-reveal] {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal="up"] { transform: translateY(32px); }
+[data-reveal="fade"] { transform: none; }
+[data-reveal="scale"] { transform: scale(0.92); }
+[data-reveal="slide-left"] { transform: translateX(-40px); }
+[data-reveal="slide-right"] { transform: translateX(40px); }
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Hero entrance animations (load-triggered, not scroll) */
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-animate {
+  animation: hero-fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-delay-1 { animation-delay: 0s; }
+.hero-delay-2 { animation-delay: 0.08s; }
+.hero-delay-3 { animation-delay: 0.16s; }
+.hero-delay-4 { animation-delay: 0.24s; }
+.hero-delay-5 { animation-delay: 0.32s; }
+.hero-delay-6 { animation-delay: 0.4s; }
+.hero-delay-7 { animation-delay: 0.5s; }
+.hero-delay-8 { animation-delay: 0.6s; }
+.hero-delay-9 { animation-delay: 0.8s; }
+.hero-delay-10 { animation-delay: 1.0s; }

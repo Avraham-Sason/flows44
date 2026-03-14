@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://flows44.com";
+  const baseUrl = "https://flows44.vercel.app";
   const locales = ["en", "he"];
   const pages = ["", "/privacy", "/terms"];
 
