@@ -76,6 +76,10 @@ export async function generateMetadata({
       description,
       images: [`${baseUrl}/og/og-${locale}.png`],
     },
+    icons: {
+      icon: "/images/small_logo.png",
+      apple: "/images/small_logo.png",
+    },
     robots: {
       index: true,
       follow: true,

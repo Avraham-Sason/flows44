@@ -28,7 +28,12 @@
       "Bash(ls C:/work/personal/Flows-44/node_modules/.pnpm/next@16.1.6_*/node_modules/next/dist/esm/build/webpack/loaders/)",
       "Bash(grep -r proxy C:/work/personal/Flows-44/node_modules/.pnpm/next-intl@4.8.3_*/node_modules/next-intl/dist/types/)",
       "Bash(pnpm remove:*)",
-      "Bash(node node_modules/next/dist/bin/next build)"
+      "Bash(node node_modules/next/dist/bin/next build)",
+      "Bash(grep -i \"logo\" /c/work/personal/Flows-44/messages/*.json)",
+      "Bash(grep -i \"logo\\\\|image\\\\|Image\\\\|src=\" /c/work/personal/Flows-44/components/layout/*.tsx)",
+      "Bash(find /c/work/personal/Flows-44 -name *splash* -o -name *loading* -o -name *icon*)",
+      "Bash(find /c/work/personal/Flows-44 -maxdepth 2 -not -path */node_modules/* -not -path */.next/* -not -path */.git/* -type d)",
+      "Bash(grep -r \"Image\\\\|image\\\\|<img\\\\|src=\" /c/work/personal/Flows-44/components --include=*.tsx)"
     ]
   }
 }
